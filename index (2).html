@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Mnelisi Kitchen Wrap (Pty) Ltd — premium architectural vinyl wrapping for kitchens, wardrobes, furniture and selected interior surfaces in Durban, South Africa.">
+<title>Mnelisi Kitchen Wrap | Transform. Wrap. Refresh.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#151412;--ink2:#211e19;--cream:#f6f2ea;--paper:#fbf9f4;
+  --gold:#d8b57a;--gold2:#b88b4a;--taupe:#b7aa98;--line:rgba(21,20,18,.13);
+  --white:#fff;--muted:#706b63;--shadow:0 24px 70px rgba(20,18,15,.14);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:"DM Sans",Arial,sans-serif;line-height:1.65}
+a{text-decoration:none;color:inherit}
+img{width:100%;display:block}
+.container{width:min(1240px,92%);margin:auto}
+.nav{position:fixed;inset:0 0 auto;z-index:100;background:rgba(13,12,10,.62);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,.13)}
+.nav-inner{height:82px;display:flex;align-items:center;justify-content:space-between;gap:28px}
+.brand{display:flex;align-items:center;gap:12px;color:#fff}
+.mark{width:40px;height:40px;border:1px solid var(--gold);display:grid;place-items:center;color:var(--gold);font-family:Georgia,serif;font-size:21px}
+.brand-main{font-family:Manrope,sans-serif;font-weight:800;letter-spacing:.19em;font-size:16px}
+.brand-sub{display:block;font-size:9px;letter-spacing:.23em;color:#e8d6b8;margin-top:2px}
+.nav-links{display:flex;align-items:center;gap:28px;color:#fff;font-size:13px}
+.nav-links a{opacity:.9;transition:.2s}
+.nav-links a:hover{color:var(--gold);opacity:1}
+.nav-cta{padding:12px 18px;border:1px solid var(--gold);color:#17130e!important;background:var(--gold);font-weight:700}
+.menu{display:none;color:#fff;background:none;border:0;font-size:27px}
+
+.hero{min-height:100vh;position:relative;display:flex;align-items:flex-end;overflow:hidden;background:#111}
+.hero-bg{position:absolute;inset:0;background-image:linear-gradient(90deg,rgba(8,7,5,.88) 0%,rgba(8,7,5,.64) 34%,rgba(8,7,5,.15) 66%,rgba(8,7,5,.34) 100%),linear-gradient(0deg,rgba(8,7,5,.58) 0%,transparent 55%),url("hero-kitchen.jpg");background-size:cover;background-position:center center}
+.hero-inner{position:relative;z-index:2;padding:155px 0 75px;display:grid;grid-template-columns:1.02fr .98fr;gap:50px;align-items:end;color:#fff}
+.kicker{font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:#e2c899;font-weight:700}
+h1,h2{font-family:"Playfair Display",Georgia,serif;font-weight:500;line-height:1.03;margin:0}
+h1{font-size:clamp(55px,7vw,104px);letter-spacing:-.045em;margin:17px 0 22px;max-width:790px}
+h1 span{color:#e6c78f}
+.hero-copy p{font-size:19px;color:#f0ece4;max-width:650px;margin:0 0 30px}
+.buttons{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 21px;font-size:13px;font-weight:700;border:1px solid rgba(255,255,255,.45);transition:.22s}
+.btn:hover{transform:translateY(-2px)}
+.btn.primary{background:var(--gold);border-color:var(--gold);color:#17130e}
+.btn.secondary{color:#fff;background:rgba(255,255,255,.05)}
+.hero-note{justify-self:end;max-width:380px;padding:26px;background:rgba(18,16,13,.45);border:1px solid rgba(255,255,255,.18);backdrop-filter:blur(10px)}
+.hero-note strong{font-family:Manrope,sans-serif;font-size:14px;letter-spacing:.08em;text-transform:uppercase}
+.hero-note p{font-size:14px;color:#e9e4da;margin:10px 0 0}
+.hero-bottom{position:relative;z-index:2;border-top:1px solid rgba(255,255,255,.18);background:rgba(11,10,8,.56);backdrop-filter:blur(10px);color:#fff}
+.hero-points{display:grid;grid-template-columns:repeat(4,1fr)}
+.hero-point{padding:20px 22px;border-right:1px solid rgba(255,255,255,.15)}
+.hero-point:last-child{border-right:0}
+.hero-point b{display:block;color:var(--gold);font-size:18px;margin-bottom:3px}
+.hero-point span{font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:#ddd7cc}
+
+.section{padding:105px 0}
+.section.dark{background:var(--ink);color:#fff}
+.section.soft{background:#eee7da}
+.section-head{display:flex;justify-content:space-between;align-items:end;gap:50px;margin-bottom:50px}
+.eyebrow{font-size:11px;text-transform:uppercase;letter-spacing:.22em;color:var(--gold2);font-weight:800;margin-bottom:13px}
+h2{font-size:clamp(43px,5.4vw,72px);letter-spacing:-.035em}
+.lead{max-width:600px;color:var(--muted);font-size:17px}
+.dark .lead{color:#c8c4bb}
+
+.about-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:75px;align-items:center}
+.about-photo{min-height:610px;background:url("project-kitchen-before-after.jpg") center/cover;box-shadow:var(--shadow)}
+.about-copy p{font-size:16px;color:#4f4c46}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:32px}
+.stat{padding-top:15px;border-top:1px solid var(--line)}
+.stat strong{display:block;font-family:Manrope;font-size:28px}
+.stat span{font-size:11px;color:#777269;text-transform:uppercase;letter-spacing:.06em}
+
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,.17)}
+.service{background:#1a1815;padding:34px 28px;min-height:225px;transition:.25s}
+.service:hover{background:#211e19;transform:translateY(-3px)}
+.service-number{font-size:11px;color:var(--gold);font-weight:800;letter-spacing:.1em}
+.service h3{font-family:Manrope,sans-serif;font-size:20px;margin:18px 0 9px}
+.service p{font-size:14px;color:#c4c0b8;margin:0}
+
+.gallery{display:grid;grid-template-columns:1.45fr 1fr 1fr;grid-auto-rows:245px;gap:14px}
+.gallery figure{position:relative;margin:0;overflow:hidden;background:#ddd;box-shadow:0 12px 35px rgba(0,0,0,.08)}
+.gallery figure:first-child{grid-row:span 2}
+.gallery figure:nth-child(4){grid-column:2/4}
+.gallery img{height:100%;object-fit:cover;transition:transform .65s}
+.gallery figure:hover img{transform:scale(1.045)}
+.gallery figcaption{position:absolute;left:16px;bottom:15px;background:rgba(14,13,11,.82);color:#fff;padding:8px 11px;font-size:10px;letter-spacing:.13em;text-transform:uppercase}
+
+.palette-intro{max-width:760px}
+.palette{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin-top:42px}
+.swatch{min-height:175px;position:relative;padding:18px;display:flex;align-items:end;overflow:hidden}
+.swatch:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 30%,rgba(0,0,0,.5))}
+.swatch-content{position:relative;z-index:2;color:#fff}
+.swatch b{display:block;font-size:13px}
+.swatch small{font-size:10px;opacity:.9;letter-spacing:.05em}
+.s245{background:#d7c8b4}.s177{background:#e6decd}.s157{background:#77756f}.s211{background:#252525}.s230{background:#254f4d}.wood{background:linear-gradient(105deg,#6c4b32,#a77b4e,#6a4930,#b88c5d)}
+
+.additional{margin-top:18px;color:#8d887f;font-size:12px}
+
+.process{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid rgba(255,255,255,.18)}
+.step{padding:34px 25px 18px;border-right:1px solid rgba(255,255,255,.18)}
+.step:last-child{border-right:0}
+.step b{font-size:11px;color:var(--gold);letter-spacing:.12em}
+.step h3{font-family:Manrope,sans-serif;font-size:20px;margin:17px 0 8px}
+.step p{font-size:14px;color:#c5c1b9}
+
+.statement{padding:100px 0;background:linear-gradient(110deg,#181613,#2a251e);color:#fff}
+.statement-inner{display:grid;grid-template-columns:1.1fr .9fr;gap:80px;align-items:center}
+.statement h2{font-size:clamp(46px,6vw,82px)}
+.statement p{color:#d2cdc4;font-size:17px}
+.quote-box{padding:35px;border:1px solid rgba(216,181,122,.4);background:rgba(255,255,255,.035)}
+.quote-box b{font-family:Manrope;font-size:14px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold)}
+.quote-box p{margin:14px 0 0}
+
+.contact{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px}
+.contact-card{padding:35px;background:var(--paper);border:1px solid var(--line);box-shadow:var(--shadow)}
+.contact-item{padding:16px 0;border-bottom:1px solid var(--line)}
+.contact-item:last-child{border-bottom:0}
+.contact-item small{display:block;font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:#8b806e;font-weight:800}
+.contact-item a{font-size:17px;font-weight:700}
+form{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+input,textarea,select{width:100%;border:1px solid var(--line);background:#fff;padding:14px;font:inherit;color:var(--ink);outline:none}
+textarea{min-height:145px;resize:vertical}
+.full{grid-column:1/-1}
+
+footer{background:#0e0d0b;color:#c9c4ba;padding:38px 0}
+.footer-inner{display:flex;justify-content:space-between;align-items:center;gap:30px}
+.footer-brand{color:#fff;font-family:Manrope;font-weight:800;letter-spacing:.15em}
+.small{font-size:11px;color:#89857d}
+
+@media(max-width:900px){
+ .nav-links{display:none}.menu{display:block}
+ .hero-inner{grid-template-columns:1fr;padding-top:145px}.hero-note{justify-self:start}
+ .hero-points{grid-template-columns:repeat(2,1fr)}
+ .hero-point:nth-child(2){border-right:0}
+ .about-grid,.statement-inner,.contact{grid-template-columns:1fr}
+ .services{grid-template-columns:1fr 1fr}
+ .gallery{grid-template-columns:1fr 1fr;grid-auto-rows:220px}
+ .gallery figure:first-child{grid-row:span 1;grid-column:span 2}
+ .gallery figure:nth-child(4){grid-column:auto}
+ .palette{grid-template-columns:repeat(3,1fr)}
+ .process{grid-template-columns:1fr 1fr}
+ .step:nth-child(2){border-right:0}
+}
+@media(max-width:560px){
+ .nav-inner{height:70px}
+ .hero-bg{background-position:63% center}
+ h1{font-size:57px}
+ .hero-copy p{font-size:17px}
+ .hero-points{grid-template-columns:1fr 1fr}
+ .hero-point{padding:15px 12px}
+ .section{padding:75px 0}
+ .section-head{display:block}.section-head .lead{margin-top:18px}
+ .about-photo{min-height:420px}
+ .services{grid-template-columns:1fr}
+ .gallery{grid-template-columns:1fr;grid-auto-rows:255px}
+ .gallery figure:first-child{grid-column:auto}
+ .palette{grid-template-columns:1fr 1fr}
+ .process{grid-template-columns:1fr}
+ .step{border-right:0!important;border-bottom:1px solid rgba(255,255,255,.18)}
+ form{grid-template-columns:1fr}.full{grid-column:auto}
+ .footer-inner{display:block}.footer-inner>*{margin-bottom:12px}
+}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="#home">
+      <span class="mark">M</span>
+      <span><span class="brand-main">MNELISI</span><span class="brand-sub">KITCHEN WRAP (PTY) LTD</span></span>
+    </a>
+    <nav class="nav-links">
+      <a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a>
+      <a href="#gallery">Gallery</a><a href="#colours">Colours</a><a href="#contact">Contact</a>
+      <a class="nav-cta" href="#contact">GET A QUOTE</a>
+    </nav>
+    <button class="menu" aria-label="Open menu" onclick="document.querySelector('.nav-links').classList.toggle('mobile-show')">☰</button>
+  </div>
+</header>
+
+<main id="home">
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="container hero-inner">
+    <div class="hero-copy">
+      <div class="kicker">Durban • KwaZulu-Natal • South Africa</div>
+      <h1>Transform your kitchen.<br><span>Keep what you love.</span></h1>
+      <p>Premium architectural vinyl wrapping that gives existing kitchens, wardrobes and selected interiors a sophisticated new finish — without the disruption of a full replacement.</p>
+      <div class="buttons">
+        <a class="btn primary" href="#contact">Request a Quote →</a>
+        <a class="btn secondary" href="https://wa.me/27635479906?text=Hello%20Mnelisi%20Kitchen%20Wrap%2C%20I%27d%20like%20a%20quote.">WhatsApp Us</a>
+      </div>
+    </div>
+    <aside class="hero-note">
+      <strong>Designed for modern living</strong>
+      <p>Architectural textures. Refined colours. Professional application. A premium visual transformation while retaining the existing structure wherever suitable.</p>
+    </aside>
+  </div>
+  <div class="hero-bottom">
+    <div class="container hero-points">
+      <div class="hero-point"><b>01</b><span>Modern finishes</span></div>
+      <div class="hero-point"><b>02</b><span>Less disruption</span></div>
+      <div class="hero-point"><b>03</b><span>Cost-conscious renovation</span></div>
+      <div class="hero-point"><b>04</b><span>Professional detailing</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="about">
+  <div class="container about-grid">
+    <div class="about-photo"></div>
+    <div class="about-copy">
+      <div class="eyebrow">The Mnelisi approach</div>
+      <h2>A refined renovation without starting from zero.</h2>
+      <p>We transform dated kitchens and suitable interior surfaces using architectural vinyl wraps selected for colour, texture and visual impact.</p>
+      <p>Our goal is simple: make the existing space feel intentional, contemporary and premium — with careful preparation, clean application and a finish that complements the rest of the home.</p>
+      <div class="stats">
+        <div class="stat"><strong>Kitchen</strong><span>Cabinet & drawer transformations</span></div>
+        <div class="stat"><strong>Wardrobe</strong><span>Bedroom & storage refresh</span></div>
+        <div class="stat"><strong>Custom</strong><span>Selected flat surfaces & furniture</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section dark" id="services">
+  <div class="container">
+    <div class="section-head">
+      <div><div class="eyebrow">Signature services</div><h2>Transform. Wrap.<br>Refresh.</h2></div>
+      <p class="lead">A focused interior wrapping service for clients who want a new visual direction without automatically replacing everything that already works.</p>
+    </div>
+    <div class="services">
+      <article class="service"><span class="service-number">01</span><h3>Kitchen Cabinets</h3><p>Wrap suitable doors, drawers and panels in modern solid colours, super-matt, gloss, woodgrain and statement finishes.</p></article>
+      <article class="service"><span class="service-number">02</span><h3>Countertop Finishes</h3><p>Refresh suitable existing surfaces with selected stone, marble and contemporary decorative architectural films.</p></article>
+      <article class="service"><span class="service-number">03</span><h3>Wardrobes</h3><p>Give bedroom cupboards and flat panels a coordinated new look using carefully selected colours and textures.</p></article>
+      <article class="service"><span class="service-number">04</span><h3>TV Stands & Furniture</h3><p>Modernise selected furniture and flat surfaces for a cleaner, more cohesive interior.</p></article>
+      <article class="service"><span class="service-number">05</span><h3>Appliance Exteriors</h3><p>Where suitable, coordinate selected appliance exteriors with the new interior colour direction.</p></article>
+      <article class="service"><span class="service-number">06</span><h3>Design Guidance</h3><p>We help clients balance warm woods, neutrals, dark accents, marble effects and architectural textures.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="gallery">
+  <div class="container">
+    <div class="section-head">
+      <div><div class="eyebrow">Selected transformations</div><h2>Real work.<br>Real impact.</h2></div>
+      <p class="lead">A visual gallery of kitchen and wardrobe transformations, supported by curated design inspiration for clients considering their own renovation.</p>
+    </div>
+    <div class="gallery">
+      <figure><img src="project-kitchen-before-after.jpg" alt="Kitchen before and after transformation"><figcaption>Kitchen • Before & After</figcaption></figure>
+      <figure><img src="project-wardrobe-before-after.jpg" alt="Wardrobe before and after transformation"><figcaption>Wardrobe • Before & After</figcaption></figure>
+      <figure><img src="project-kitchen-transformation.jpg" alt="Kitchen transformation"><figcaption>Kitchen • Colour Transformation</figcaption></figure>
+      <figure><img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1400&q=88" alt="Luxury modern kitchen inspiration"><figcaption>Design Inspiration • Luxury</figcaption></figure>
+      <figure><img src="https://images.unsplash.com/photo-1556912173-3bb406ef7e77?auto=format&fit=crop&w=1200&q=88" alt="Modern warm kitchen inspiration"><figcaption>Design Inspiration • Warm Modern</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="section soft" id="colours">
+  <div class="container">
+    <div class="palette-intro">
+      <div class="eyebrow">Colour & texture direction</div>
+      <h2>Build a palette that feels like you.</h2>
+      <p class="lead">Our colour presentation is inspired by premium architectural-film palettes, including selected Bodaq references, alongside other suitable film ranges and woodgrain finishes. Always confirm the physical sample before final selection.</p>
+    </div>
+    <div class="palette">
+      <div class="swatch s245"><div class="swatch-content"><b>Light Creme</b><small>Bodaq S245</small></div></div>
+      <div class="swatch s177"><div class="swatch-content"><b>Ivory</b><small>Bodaq S177</small></div></div>
+      <div class="swatch s157"><div class="swatch-content"><b>Solid Gray</b><small>Bodaq S157</small></div></div>
+      <div class="swatch s211"><div class="swatch-content"><b>Charcoal Black</b><small>Bodaq S211</small></div></div>
+      <div class="swatch s230"><div class="swatch-content"><b>Dark Teal</b><small>Bodaq S230</small></div></div>
+      <div class="swatch wood"><div class="swatch-content"><b>Natural Woodgrain</b><small>Architectural film direction</small></div></div>
+    </div>
+    <p class="additional">Additional options can include high-gloss white, super-matt neutrals, marble, stone, oak, walnut and other architectural textures subject to stock and project requirements.</p>
+  </div>
+</section>
+
+<section class="section dark" id="process">
+  <div class="container">
+    <div class="section-head">
+      <div><div class="eyebrow">The client journey</div><h2>Professional from<br>consultation to finish.</h2></div>
+      <p class="lead">Clear communication, measured scope and a finish selected around the client's space, lifestyle and budget.</p>
+    </div>
+    <div class="process">
+      <div class="step"><b>01 / CONSULT</b><h3>Understand the space</h3><p>Share photographs, measurements or arrange a site consultation so we can understand the surfaces and desired outcome.</p></div>
+      <div class="step"><b>02 / DESIGN</b><h3>Select the direction</h3><p>Choose colours, textures and finishes that work together across the kitchen, wardrobe or selected interior surfaces.</p></div>
+      <div class="step"><b>03 / QUOTE</b><h3>Confirm the scope</h3><p>Receive a clear quotation based on the measured areas, materials, preparation and installation requirements.</p></div>
+      <div class="step"><b>04 / INSTALL</b><h3>Transform the space</h3><p>Surface preparation and professional application are completed with attention to edges, joins and overall presentation.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="statement">
+  <div class="container statement-inner">
+    <div>
+      <div class="eyebrow">A smarter way to refresh</div>
+      <h2>Old does not always mean replace.</h2>
+      <p>When the structure is still suitable, architectural vinyl can create a dramatic visual change while reducing the need for a full demolition-and-replacement project.</p>
+    </div>
+    <div class="quote-box">
+      <b>Let's discuss your space</b>
+      <p>Send us photographs of your kitchen, wardrobe or furniture. We can assess the opportunity and guide you towards a suitable finish.</p>
+      <a class="btn primary" href="#contact">Start Your Project →</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <div class="container contact">
+    <div>
+      <div class="eyebrow">Contact Mnelisi Kitchen Wrap</div>
+      <h2>Ready for a new look?</h2>
+      <p class="lead">Tell us what you would like to transform and we will help you take the next step.</p>
+      <div class="contact-card">
+        <div class="contact-item"><small>Phone / WhatsApp</small><a href="tel:+27635479906">+27 63 547 9906</a></div>
+        <div class="contact-item"><small>Email</small><a href="mailto:mnelisi@kitchenwrap.co.za">mnelisi@kitchenwrap.co.za</a></div>
+        <div class="contact-item"><small>Website</small><a href="https://www.mnelisikitchenwrap.co.za">www.mnelisikitchenwrap.co.za</a></div>
+        <div class="contact-item"><small>Location</small><span>Durban, KwaZulu-Natal, South Africa</span></div>
+      </div>
+    </div>
+    <div class="contact-card">
+      <form action="mailto:mnelisi@kitchenwrap.co.za" method="post" enctype="text/plain">
+        <input name="Name" placeholder="Your name" required>
+        <input name="Phone" placeholder="Phone / WhatsApp" required>
+        <input class="full" name="Email" type="email" placeholder="Email address">
+        <select class="full" name="Project">
+          <option value="">What would you like to transform?</option>
+          <option>Kitchen</option><option>Wardrobe</option><option>TV Stand / Furniture</option><option>Other flat surface</option>
+        </select>
+        <textarea class="full" name="Message" placeholder="Tell us about your project..."></textarea>
+        <button class="btn primary full" type="submit">Request a Consultation →</button>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container footer-inner">
+    <div><div class="footer-brand">MNELISI KITCHEN WRAP (PTY) LTD</div><div class="small">Transform • Wrap • Refresh</div></div>
+    <div class="small">Durban, KwaZulu-Natal • +27 63 547 9906 • mnelisi@kitchenwrap.co.za</div>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('.nav-links a').forEach(a=>{
+  a.addEventListener('click',()=>document.querySelector('.nav-links').classList.remove('mobile-show'));
+});
+const style=document.createElement('style');
+style.textContent='@media(max-width:900px){.nav-links.mobile-show{display:flex;position:absolute;top:70px;left:4%;right:4%;padding:18px;background:rgba(15,14,12,.98);flex-direction:column;align-items:stretch;gap:14px;border:1px solid rgba(255,255,255,.12)}.nav-links.mobile-show .nav-cta{text-align:center}}';
+document.head.appendChild(style);
+</script>
+</body>
+</html>
